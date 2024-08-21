@@ -102,7 +102,11 @@ image::NUEiP.png[NUEip, align=center]
 
 === nuHRM 技能只能輸入文字 無法像odoo一樣標籤選擇
 
+nuHRM
+
 image::2024-08-21_155413.png[NUEip, align=center]
+
+Odoo
 
 image::2024-08-21_155501.png[NUEip, align=center]
 
