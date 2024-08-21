@@ -8,6 +8,8 @@ _Will have similarity with recruiting website_
 Global Talent Network. 複合型的找工作平台
 https://www.cakeresume.com/search?user.location%5B0%5D=Taiwan&user.rn_work_experience%5B0%5D=four_six&user.rn_work_experience%5B1%5D=six_ten&user.rn_work_experience%5B2%5D=ten_fifteen&user.rn_work_experience%5B3%5D=fifteen_
 
+this is only a part of the systm from Cake, but we will focus on that system itself. It is a standard recruit website that integrate the resume tool cake provide itself to make a resume that embedded inside your profile. Noticably, it also use a tag system that is very versatile in which it will shows inside your profile. 
+
 Pros:
 
 * 健全的搜尋及篩選功能，會把目前搜尋的結果推薦相近的標籤
@@ -35,9 +37,10 @@ Cons:
 * 標籤居然沒有辦法用來找人才或者顯示在瀏覽業面
 
 == Dribbble
-
+專為找尋設計師提供的人才網站 +
 https://dribbble.com/
 
 Pros:
+* 
 
 Cons:
