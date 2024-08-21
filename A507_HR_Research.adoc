@@ -99,7 +99,7 @@ odoo.png[alt="Odoo 特點示意圖",width=600,align="center"]
 === nuHRM 員工檔案管理
 * 人資系統無法直接觀看更多員工相關信息，須進入編輯人員畫面。
 
-image::NUEip.png[NUEip, align=center]
+image::NUEiP.png[NUEip, align=center]
 
 === nuHRM 技能只能輸入文字 無法像odoo一樣標籤選擇
 
