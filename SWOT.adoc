@@ -1,0 +1,43 @@
+_Note that the target audience is managment team and project manager_ + 
+_Will have similarity with recruiting website_
+
+= Competing Product Analysis
+- KeyNote: 我們要做的系統屬於人力資源領域，更偏向人才招募層面
+
+== Cake Resume:
+Global Talent Network. 複合型的找工作平台
+https://www.cakeresume.com/search?user.location%5B0%5D=Taiwan&user.rn_work_experience%5B0%5D=four_six&user.rn_work_experience%5B1%5D=six_ten&user.rn_work_experience%5B2%5D=ten_fifteen&user.rn_work_experience%5B3%5D=fifteen_
+
+Pros:
+
+* 健全的搜尋及篩選功能，會把目前搜尋的結果推薦相近的標籤
+* 搜尋人才時會去對關鍵字找尋 Tag 及 profolio 內的關鍵字
+* 技能及簡介由簡略到詳盡，尤其搜尋的技能會在自傳裡做 hightlight 很棒
+
+Cons:
+* UI 很雜，字小且版面擠
+* 履歷部分是連在一起 找到特定區塊比較麻煩
+
+== Portfolium 
+專為畢業生設計 為 Canvas 底下的一個系統
+https://portfolium.com/search/people?page=1&sort=percentage
+
+Pros:
+
+* 分類索引相當完善 profile, resume, connection 都劃分出來了
+* 個人資歷做的很好且能用標籤當作連結轉去有運用到該技術的project
+* 標籤細分很好且功能項很便利
+
+Cons:
+
+* 只能用人名來搜尋人才...
+* 簡介部分簡略到只看的到學位
+* 標籤居然沒有辦法用來找人才或者顯示在瀏覽業面
+
+== Dribbble
+
+https://dribbble.com/
+
+Pros:
+
+Cons:
