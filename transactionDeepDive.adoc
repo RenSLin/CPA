@@ -1,0 +1,49 @@
+== 核心觀念探索
+
+https://medium.com/@youngjae991/mastering-transaction-management-in-java-with-spring-aop-8d1872d8ad07
+
+https://stackoverflow.com/questions/1099025/spring-transactional-what-happens-in-background
+
+https://spring.io/blog/2012/05/23/transactions-caching-and-aop-understanding-proxy-usage-in-spring
+
+== Transaction overview
+1. The program executes, then the encountered an Transactional annotation
+2. The proxy is created outside the target method's class and intercept the call
+3. Through AOP configuration, Proxy then delegate the call to different advisor
+
+== AOP proxy
+* Types
+** JDK Dynamic Proxies: 目標 class 有 implement interface
+** CGLIB Proxies: 目標 class 沒有 implement interface 或 proxyTargetClass=true.
+* 在執行程式時 proxy 會被產生在我們有使用 @transactrional 的 object 外 intercept 外部對於該 method 的呼叫
+* 有些情況下 proxy 不會被叫到，常見的有:
+** Self invocation
++
+[source,Java]
+----
+@Service
+public class OrderService {
+
+    @Autowired
+    private OrderRepository orderRepository;
+
+    @Transactional
+    public void placeOrder(Order order) {
+        saveOrder(order); // Direct internal call, bypassing proxy
+    }
+
+    @Transactional
+    public void saveOrder(Order order) {
+        orderRepository.save(order);
+    }
+}
+----
+** Proxy 只會攔截 external call. 因此內部的 method call (self invocation) 並不會被 proxy 攔截到
+* Method not public
+** Method 必須是 public or protected 才會讓 proxy 有 access control
+* Proxy configuration error
+** 預設上如果 class 有 implement interface 則 proxy 會產生 JDK Dynamic Proxies 沒有就會產生 CGLIB Proxies。如果使用 interfaced based proxy 而 class 有 interface 沒有的 method 就不會被 proxy 抓到 (fixed through proxyTargetClass=true)
+* new keyword
+** AOP proxy 只會攔截被 Spring container managed 的 bean 因此 new 出來的 class 不會被攔截
+
+== Transaction manager/adviser
