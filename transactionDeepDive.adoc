@@ -10,6 +10,8 @@ https://spring.io/blog/2012/05/23/transactions-caching-and-aop-understanding-pro
 1. The program executes, then the encountered an Transactional annotation
 2. The proxy is created outside the target method's class and intercept the call
 3. Through AOP configuration, Proxy then delegate the call to different advisor
+4. Transaction Adviser will execute its transaction logic
+5. Execute the target method
 
 == AOP proxy
 * Types
@@ -47,3 +49,6 @@ public class OrderService {
 ** AOP proxy 只會攔截被 Spring container managed 的 bean 因此 new 出來的 class 不會被攔截
 
 == Transaction manager/adviser
+* 主要工作
+** 用 transaction 的 configuration (propogation level, isolation level) 去執行 method 及結果的 commit/rollback behavior. 
+
